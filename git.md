@@ -23,3 +23,16 @@ git diff <file.name> 查看具体被修改的内容
 diff  difference(差异) 简写
 
 
+git log 查看历史记录
+
+也可以添加参数 --pretty=oneline 输出成一行 
+
+如：// 一大串85ed...的是commit id 版本号 
+85edc1b8670271cca212e47480587aa430375f82 <E6><88><91><E5><9C><A8><E5><AD><A6>git
+
+启动时光穿梭 
+git用HEAD表示当前版本 也就是最近提交的版本 上一个版本就是HEAD^ 上上个版本HEAD^^ 
+当然版本很多的时候可以用数字来表示第多少版本 比如第三十个 HEAD~30
+
+上一个版本
+git reset --hard HEAD^
