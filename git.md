@@ -36,3 +36,60 @@ git用HEAD表示当前版本 也就是最近提交的版本 上一个版本就是HEAD^ 上上个版本HEAD^^
 
 上一个版本
 git reset --hard HEAD^
+
+// 再查看文件已经没有上一个版本的内容了 那如何恢复已经删除的版本呢
+git reset --hard gitID  // 前提是命令窗口还未关闭 可以查看 gitID
+
+git reflog 用来记录每一次命令 // 不用担心窗口关闭查找不到gitID 
+
+
+
+### git缓存区
+
+版本仓库 repository 
+git最重要的是称为stage（或者index）的暂存区
+git 会为我们创建第一个分支master 以及只想master的指针叫HEAD
+
+复习一
+第一步 git add 把文件添加 是把文件添加进暂存
+第二步 git commit 提交更改  是把暂存文件提交给当前分支
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
