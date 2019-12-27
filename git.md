@@ -114,6 +114,10 @@ switch 命令切换创建分支
 切换分支 git switch master
 
 
+分支存在差异如何手动处理
+
+先切换到master分支
+git checkout master
  
 
 
