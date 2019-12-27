@@ -12,6 +12,9 @@ git commit -m "提示信息" 强烈建议要写
 git commit 同时会提交多个文件
 
 第三步执行 git status 
+git  status 查看仓库 哪些文件被修改了 需要提交的内容
+
+
 modified(修改) modified 后面是被修改的文件
 
 
