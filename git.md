@@ -55,18 +55,21 @@ git 会为我们创建第一个分支master 以及只想master的指针叫HEAD
 第二步 git commit 提交更改  是把暂存文件提交给当前分支
 
 
+UNtracked files
+
+git add 实际上就是把提交的所有修改放到暂存区 Stage
+然后执行 git commit 就可以一次性把暂存的所有修改提交给分支
+ 
+git checkout -- <file.name>  将指定工作区的修改全部撤销 
+
+命令中的-- 很重要 如果没有就变成了切换到另一个分支的命令
+
+git reset HEAD <file.name> 把暂存区的修改撤回 重新放回工作区
 
 
 
-
-
-
-
-
-
-
-
-
+链接远程仓库
+git remote add origin <github.repositiry.url>
 
 
 
