@@ -66,10 +66,16 @@ git checkout -- <file.name>  将指定工作区的修改全部撤销
 
 git reset HEAD <file.name> 把暂存区的修改撤回 重新放回工作区
 
+生成ssh 秘钥 id_rsa和id——rsa.pub 连个文件 id——rsa 是私钥 
+id_rsa.pub是公钥 github上传的是公钥
 
+ssh-keygen -t rsa -C "yyouremail@example.com"
 
 链接远程仓库
 git remote add origin <github.repositiry.url>
+
+推送到远程仓库上
+git push -u origin master
 
 
 
