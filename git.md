@@ -101,9 +101,9 @@ git branch
 
 
 合并分支 
-git merge <name>
+git merge <name> -m "提示信息" 
 
-删除分支
+强行删除分支
 git branch -d dev 
 
 
@@ -129,17 +129,33 @@ git checkout master
 查看分支合并图
 git log --graph --pretty=oneline 
 
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+
+git merge --no-ff -m "merge with no-ff" dev
 
 
+git stash 功能可以将工作现场存储起来等一会恢复现场后继续工作
 
+git stash list 查看保存的工作现场
 
+恢复保存的工作现场
 
++ git stash apply 工作现场不会被删除 方便以后找回 同时可以用git stash drop 再删除
++ git stash pop 恢复的同时删除工作现场
 
+查看远程仓库
+git remote 
+git remote -v 查看远程仓库详情
 
+推送到远程仓库上
+git push origin <master> 
 
+抓取分支
+git clone <仓库地址>
 
+本地仓库dev分支与远程仓库origin/dev 分支链接 
 
-
+git branch --set-upstream-to=origin/dev dev
 
 
 
