@@ -126,8 +126,8 @@ git checkout master
 在进行添加 提交 便可以成功合并仓库 
 之后就可以删除仓库了
 
-
-
+查看分支合并图
+git log --graph --pretty=oneline 
 
 
 
