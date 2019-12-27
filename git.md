@@ -77,6 +77,44 @@ git remote add origin <github.repositiry.url>
 推送到远程仓库上
 git push -u origin master
 
+从远程库克隆
+
+首先创建远程库
+
+git clone 克隆一个本地库
+git clone <url>
+ls 查看文件
+
+
+分支 首先创建分支 dev分支 然后切换分支
+
+** 创建分支 并切换分支 -b参数表示创建并切换分支**
+git checkout -b dev 
+
+
+相当于下面命令
+git branch <name>
+git checkout <name>
+
+查看当前分支
+git branch 
+
+
+合并分支 
+git merge <name>
+
+删除分支
+git branch -d dev 
+
+
+switch 命令切换创建分支 
+
+创建分支 git switch -c dev
+
+切换分支 git switch master
+
+
+ 
 
 
 
