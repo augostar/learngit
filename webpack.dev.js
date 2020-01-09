@@ -8,7 +8,8 @@ const base =require("./webpack.base.js");
 //生成创建HTML入口文件
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-
+// 复制公共文件
+const CopyPlugin = require('copy-webpack-plugin');
 
 
 module.exports=merge.smart(base,{
@@ -46,7 +47,14 @@ module.exports=merge.smart(base,{
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             DEV:JSON.stringify("dev")
-        })
+        }),
+        new CopyPlugin([
+            {
+                from:"src/public/",
+                to:"public/",
+                toType:"dir"
+            }
+        ])
     ]
 })
 

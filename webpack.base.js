@@ -5,6 +5,7 @@ const MiniCssExtract= require("mini-css-extract-plugin");
 //处理中文乱码
 const EncodingPlugin= require("webpack-encoding-plugin");
 
+
 console.log("2");
 console.log("生成文件路径"+path.resolve(__dirname,"./dist"))
 const NODE_ENV=process.env.NODE_ENV;
