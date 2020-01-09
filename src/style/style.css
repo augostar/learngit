@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: red;
+}
+body{
+    color: #888;
+}
+#app{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background: url(../public/img/150256440.jpg) no-repeat;
+    display: flex;
+    transform: translateX(-50px);
+}
